@@ -20,10 +20,12 @@ If you haven't used Site Starter before and might not have all required dependen
 3. `brew install imagemagick` (for Gulp-powered image resizing)
 4. `brew install graphicsmagick` (ditto)
 5. `npm install` (install NPM packages)
-6. Find and replace all instances of `examplesite.com` with URL of new site
-7. Find and replace instances of `Site Owner`
-8. Replace `favicon.png`
-9. Make site edits 
+
+Now just open the site in your text editor and away you go. Some important changes you'' want to make:
+
+1. Find and replace all instances of `examplesite.com` with URL of new site
+2. Find and replace instances of `Site Owner`
+3. Replace `favicon.png` 
 
 ### Configure hosting
 * Configure domain on [Route 53](https://console.aws.amazon.com/route53) including `assets.` and `staging.` subdomains (see one of the other examples e.g. mademountain.com)
