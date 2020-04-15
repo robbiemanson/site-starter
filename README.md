@@ -12,7 +12,7 @@ My standard website starter template. Jekyll build hosted on S3/Cloudfront.
 
 ## Getting started
 
-If you don't have Homebrew, Ruby, Bunlder or Node.js already – follow the [starting from scratch](#starting-from-scratch) instructions first. 
+If you don't have Homebrew, Ruby, Bundler or Node.js already – follow the [starting from scratch](#starting-from-scratch) instructions first. 
 
 ### Configure new site locally
 1. `git clone git@github.com:robbiemanson/site-starter.git` into a new directory, or download zip 
