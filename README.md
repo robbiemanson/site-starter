@@ -12,7 +12,7 @@ My standard website starter template. Jekyll build hosted on S3/Cloudfront.
 
 ## Getting started
 
-If you haven't used Site Starter before and might not have all required dependencies, follow the [starting from scratch](#starting-from-scratch) list first. 
+If you don't have Homebrew, Ruby, Bunlder or Node.js already – follow the [starting from scratch](#starting-from-scratch) instructions first. 
 
 ### Configure new site locally
 1. `git clone git@github.com:robbiemanson/site-starter.git` into a new directory, or download zip 
@@ -111,9 +111,10 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/chruby.sh 
 source /usr/local/share/chruby/auto.sh
 ```
-8. [Install Bundler](https://bundler.io/)
+8. Install [Bundler](https://bundler.io/)
 ```bash
 gem install bundler -v '1.13.7'
 ```
+9. Install [Node.js] for npm: https://nodejs.org
 
 Now follow instructions to [configure a new site locally](#configure-new-site-locally)!
