@@ -1,0 +1,48 @@
+---
+layout: heading_leader_content
+---
+<figure class="MediaContainer">
+  <img class="Media Media--image u-width--100percent" src="{{ site.asset_url }}/assets/images/photos/{{ page.hero_image }}" alt="{{ page.hero_image_alt }}" />
+</figure>
+
+{% for image in page.images %}
+
+{% if image.image_style == 'full_width' %}
+
+<figure class="MediaContainer">
+  {% if image.image_caption %}
+  <div class="row">
+    <div class="column">
+      <figcaption class="Metadata Metadata--figcaption">
+        {{ image.image_caption }}
+      </figcaption>
+    </div>
+  </div>
+  {% endif %}
+  <a href="{{ site.asset_url }}/assets/images/photos/{{ image.image_path }}">
+    <img class="Media Media--image lazyload u-width--100percent" data-src="{{ site.asset_url }}/assets/images/photos/{{ image.image_path }}" src="{{ site.asset_url }}/assets/images/placeholder.svg" alt="{{ image.image_alt }}" />
+  </a>
+</figure>
+
+{% else %}
+
+<div class="l-Wrapper l-Wrapper--row">
+  <section class="row">
+    <div class="column">
+      <figure class="MediaContainer">
+        {% if image.image_caption %}
+        <figcaption class="Metadata Metadata--figcaption">
+          {{ image.image_caption }}
+        </figcaption>
+        {% endif %}
+        <a href="{{ site.asset_url }}/assets/images/photos/{{ image.image_path }}">
+          <img class="Media Media--image lazyload u-width--100percent" data-src="{{ site.asset_url }}/assets/images/photos/{{ image.image_path }}" src="{{ site.asset_url }}/assets/images/placeholder.svg" alt="{{ image.image_alt }}" />
+        </a>
+      </figure>
+    </div>
+  </section>
+</div>
+
+{% endif %}
+
+{% endfor %}

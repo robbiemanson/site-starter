@@ -1,0 +1,38 @@
+  <div class="l-Wrapper l-Wrapper--row" role="banner">
+
+    <header class="Navigation row">
+      <div class="column">
+
+        <div class="row u-padding-left--0 u-padding-right--0">
+          
+          <div class="column medium-4">
+            <div class="u-margin-bottom--default u-margin-top--default u-md-float--left u-sm-text-align--center">
+              {% if page.is_home != null %}
+              <h1>
+                <a href="/" class="NavLink NavLink--bold">
+                  {{ site.title }}
+                </a>
+              </h1>
+              {% else %}
+              <h2>
+                <a href="/" class="NavLink NavLink--bold">
+                  {{ site.title }}
+                </a>
+              </h2>
+              {% endif %}
+            </div>          
+          </div>
+
+          <div class="column medium-8">
+            <div class="u-margin-bottom--default u-margin-top--default u-md-float--left u-sm-text-align--center">
+              {% include nav_primary.html %}
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </header>
+
+  </div>

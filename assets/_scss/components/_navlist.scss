@@ -1,0 +1,107 @@
+/* NavList
+   ========================================================================== */
+
+.NavList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.NavList li {
+  margin: 0;
+}
+
+.NavList--inline li {
+  display: inline-block;
+  margin: 0 0.25em;
+}
+
+.NavList--inline li:first-child {
+  margin-left: 0;
+}
+
+.NavList--inline li:last-child {
+  margin-right: 0;
+}
+
+.NavList--inline--spaced li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.NavLink {
+  text-decoration: none;
+  @include font-size(small);
+  @include line-height(tight);
+  @include text-color(gray-1);
+  @include rm-font-family(alt);
+
+  @media only screen and (min-width: $breakpoint--sm) {
+    @include font-size(default);
+  }
+}
+
+.NavLink--small {
+  @media only screen and (min-width: $breakpoint--sm) {
+    @include font-size(small);
+  }
+}
+
+.NavLink:active,
+.NavLink:focus,
+.NavLink:hover {
+  @include text-color(gray-7);
+}
+
+@if $transforms-and-gradients == true {
+
+  html.u-gradient-1 {
+    .NavLink:active,
+    .NavLink:focus,
+    .NavLink:hover {
+      color: $gradient-1--color-1;
+    }
+  }
+
+  html.u-gradient-2 {
+    .NavLink:active,
+    .NavLink:focus,
+    .NavLink:hover {
+      color: $gradient-2--color-1;
+    }
+  }
+
+  html.u-gradient-3 {
+    .NavLink:active,
+    .NavLink:focus,
+    .NavLink:hover {
+      color: $gradient-3--color-1;
+    }
+  }
+
+}
+
+.NavLink--bold {
+  font-weight: 600;
+  @include rm-font-family(bold);
+}
+
+.NavLink--current {
+  @include text-color(gray-7);
+}
+
+// @if $transforms-and-gradients == true {
+//
+//   html.u-gradient-1 .NavLink--current {
+//     color: $gradient-1--color-1;
+//   }
+//
+//   html.u-gradient-2 .NavLink--current {
+//     color: $gradient-2--color-1;
+//   }
+//
+//   html.u-gradient-3 .NavLink--current {
+//     color: $gradient-3--color-1;
+//   }
+//
+// }

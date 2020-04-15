@@ -1,0 +1,23 @@
+---
+layout: heading_leader_vertical_stack_content
+---
+<div class="l-Wrapper l-Wrapper--row">
+  <section class="row">
+    <div class="column">
+      <figure>
+        <div class="MediaContainer MediaContainer--mobile">
+          <img class="lazyload Media Media--image Media--image--feature Media--image--poster"
+              data-src="{{ site.asset_url }}/assets/videos/{{ page.poster_path }}" src="{{ site.asset_url }}/assets/images/placeholder.svg" />
+          <video id="{{ page.video_id }}"
+              class="lazyload Media Media-video Media-video--inline video-js vjs-big-play-centered vjs-default-skin"
+              controls
+              data-setup='{ "children": { "controlBar": { "children": { "muteToggle": true, "fullscreenToggle": true, "volumeControl": true } } } }'
+              preload="none">
+            <source src="{{ site.asset_url }}/assets/videos/{{ page.video_path }}" type="video/mp4" />
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+          </video>
+        </div>
+      </figure>
+    </div>
+  </section>
+</div>

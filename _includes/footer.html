@@ -1,0 +1,41 @@
+<div class="l-Wrapper l-Wrapper--row" role="contentinfo">
+
+  <footer class="row u-padding-left--0 u-padding-right--0 u-padding-top--xx-large u-padding-bottom--xx-large">
+    <div class="column medium-8 medium-push-4">
+      <ol class="NavList NavList--inline" role="navigation">
+        {% for link in site.navigation_primary %}
+        <li>
+        {% if page.nav_category == link.nav_category %}
+          <a href="{{link.url}}" class="NavLink NavLink--current NavLink--small">{{link.title}}</a>
+        {% else %}
+          <a href="{{link.url}}" class="NavLink NavLink--small">{{link.title}}</a>
+        {% endif %}
+        </li>
+        {% endfor %}
+        <li>
+          {% if page.nav_category == link.nav_category %}
+          <a class="NavLink NavLink--current NavLink--small" href="/pattern-library/">
+            Pattern Library
+          </a>
+          {% else %}
+          <a class="NavLink NavLink--small" href="/pattern-library/">
+            Pattern Library
+          </a>
+          {% endif %}
+        </li>
+        <li class="Metadata Metadata--small">
+          &copy; {{ site.time | date: '%Y' }} Site Owner
+        </li>
+      </ol>
+    </div>
+  </footer>
+
+</div>
+
+<script src="{{ "/assets/scripts/vendor/lazysizes.min.js" | prepend: site.asset_url }}" async=""></script>
+<script src="//vjs.zencdn.net/4.12/video.js"></script>
+<script src="{{ "/assets/scripts/application.min.js" | prepend: site.asset_url }}"></script>
+
+{% if site.asset_url %}
+
+{% endif %}

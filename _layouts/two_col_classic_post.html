@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="l-Wrapper l-Wrapper--row" role="main">
+
+  <article class="row">
+    <div class="column medium-4">
+      <div class="column-content column-content--narrow">
+        <h1 class="Heading Heading--xx-large">{{ page.title }}</h1>
+        {% if page.metadata_string %}
+        <span class="Metadata Metadata--editorialSubhead">{{ page.metadata_string }}</span>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="column medium-8">
+
+      <div class="Editorial">
+        {{ content }}
+      </div>
+
+    	<footer class="Metadata u-margin-top--xx-large" role="complementary">
+
+        {% if content and page.related %}
+        <h4 class="Metadata">Related</h4>
+        <ul class="List List--dashed List--loose u-margin-bottom--large u-margin-top--small">
+          {% for post in site.posts %}
+            {% if page.related contains post.title %}
+              <li>
+                <a class="Link" href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+      </footer>
+
+    </div>
+  </article>
+
+</div>

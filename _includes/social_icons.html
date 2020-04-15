@@ -1,0 +1,86 @@
+<div class="row">
+  {% if page.layout == 'permalink_left_aligned' or page.layout == 'permalink_centre_aligned' %}
+  <div class="column medium-8 medium-push-4">
+  {% else %}
+  <div class="column">
+  {% endif %}
+    <div class="u-margin-bottom--small">
+      {% comment %}
+      <div class="u-margin-bottom--large">
+        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:2JdHC9r40HNEpetp7SVo1h?si=srbTRfUnTGGfXuxLViwTPQ&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+      </div>
+      {% endcomment %}
+
+      <ul class="NavList NavList--inline u-sm-display--inline-block u-margin-bottom--small" role="navigation">
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/spotify">
+            <i class="Icon Icon--secondary Icon--small Icon--spotify">
+              {% include icons/spotify.svg %}
+            </i>
+           <span class="u-visuallyHidden">Spotify</span>
+         </a>
+        </li>
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/apple">
+            <i class="Icon Icon--secondary Icon--small Icon--applemusic">
+              {% include icons/applemusic.svg %}
+            </i>
+           <span class="u-visuallyHidden">Apple Music</span>
+          </a>
+        </li>
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/youtube">
+            <i class="Icon Icon--secondary Icon--small Icon--youtube">
+              {% include icons/youtube.svg %}
+            </i>
+           <span class="u-visuallyHidden">YouTube</span>
+          </a>
+        </li>
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/bandcamp">
+            <i class="Icon Icon--secondary Icon--small Icon--bandcamp">
+              {% include icons/bandcamp.svg %}
+            </i>
+           <span class="u-visuallyHidden">Bandcamp</span>
+          </a>
+        </li>
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/soundcloud">
+            <i class="Icon Icon--secondary Icon--small Icon--soundcloud">
+              {% include icons/soundcloud.svg %}
+            </i>
+           <span class="u-visuallyHidden">Soundcloud</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="NavList NavList--inline u-sm-display--inline-block" role="navigation">
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/fb">
+            <i class="Icon Icon--secondary Icon--small Icon--facebook">
+              {% include icons/facebook.svg %}
+            </i>
+            <span class="u-visuallyHidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/tw">
+            <i class="Icon Icon--secondary Icon--small Icon--twitter">
+              {% include icons/twitter.svg %}
+            </i>
+            <span class="u-visuallyHidden">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="IconLink IconLink--small" href="https://mdmt.in/ig">
+            <i class="Icon Icon--secondary Icon--small Icon--instagram">
+              {% include icons/instagram.svg %}
+            </i>
+            <span class="u-visuallyHidden">Instagram</span>              
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

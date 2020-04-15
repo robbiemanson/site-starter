@@ -1,0 +1,21 @@
+/* VideoInline 
+   ========================================================================== */
+
+.VideoInline {
+  position: relative;
+}
+ 
+.VideoInline-video {
+  display: none;
+  height: 442px;
+  left: 225px;
+  position: absolute;
+  top: 93px;
+  width: 249px;
+}
+
+@media only screen and (min-width: 960px) {
+  .VideoInline-video {
+    display: block;
+  }
+}

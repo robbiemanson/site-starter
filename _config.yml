@@ -1,0 +1,97 @@
+# Site settings
+title: Site Owner – A simple short description
+email: example@examplesite.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple short description of the site for the meta keywords tag
+keywords: > # this means to ignore newlines until "baseurl:"
+  Keyword one, keywords two and three, keywords four and five
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://examplesite.com" # the base hostname & protocol for your site
+twitter_username: twittername
+github_username: githubname
+
+# URL for assets
+# Comment out CloudFront URL for previewing work locally
+
+# Production:
+# asset_url: http://assets.examplesite.com
+
+# Staging (note: this is referenced in _head.html) to hide staging from search engines):
+# asset_url: http://db0jskgwwrkbn.cloudfront.net
+
+port: 5001
+
+plugins:
+  - code-example
+  - jekyll_inline_highlight
+
+# Ignored directories and files
+exclude:
+  - node_modules
+  - README.md
+  - s3_website.yml
+  - .DS_Store
+  - wp-content
+  - jekyll
+  - assets/scss
+  - gulpfile.js
+  - assets/scripts/src
+  - assets/scripts/vendor/jquery-1.10.0.min.js
+  - package.json
+  - wip.html
+  - gradient_tests.html
+  - resources.html
+  - talks.html
+  - Gemfile
+  - Gemfile.lock
+
+# Navigation
+# `nav_category` is really just a hack to get active states working for the nav;
+# a better solution should be found in the future
+navigation_primary:
+- title: Home
+  url: /
+  nav_category: home
+- title: Services
+  url: /services/
+  nav_category: services
+- title: About
+  url: /about/
+  nav_category: about
+- title: Contact
+  url: /contact/
+  nav_category: contact
+
+navigation_footer:
+- title: Email
+  url: mailto:example@examplesite.com
+  nav_category: 
+- title: Guide
+  url: /how-to-self-release-an-album/
+  nav_category: guide
+
+# Build settings
+#markdown: redcarpet
+#redcarpet:
+#  extensions:
+#    # Turns shitty single and double quotes into curly ones
+#    ["smart"]
+
+# Markdown processors
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  auto_ids: true
+
+sass:
+  sass_dir: assets/_scss
+  style: compressed
+
+# Collections
+collections:
+  photos:
+    output: true
+    permalink: /photos/:path/
+  minute-movies:
+    output: true
+    permalink: /minute-movies/:path/

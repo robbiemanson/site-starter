@@ -1,0 +1,78 @@
+.Pullquote {
+  margin-left: 0.75em;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+  @include margin-bottom(large);
+  @include Leader;
+  @include Leader--extraLarge;
+
+  @media only screen and (min-width: $breakpoint--medium-breakpoint) {
+    margin-left: -2em !important;
+    margin-right: -2em !important;
+  }
+}
+
+.Pullquote--contained {
+  @media only screen and (min-width: $breakpoint--medium-breakpoint) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.Pullquote--lite {
+  @include text-color(x-light, !important);
+  @include Neuzeit-letter-spacing--reduced;
+  @include rm-font-family(alt);
+}
+
+.Pullquote-quote {
+  display: block;
+}
+
+.Pullquote-quote:after,
+.Pullquote-quote:before {
+  display: inline-block;
+  -webkit-text-fill-color: $color--gray-9;
+  text-fill-color: $color--gray-9;
+  width: 1em;
+  @include text-color(x-light);
+}
+
+.Pullquote-quote:after {
+  content: "”";
+  margin-left: 0.15em;
+}
+
+.Pullquote-quote:before {
+  content: "“";
+  margin-left: -1.15em;
+  margin-right: 0.15em;
+  text-align: right;
+}
+
+.Pullquote-cite {
+  font-style: normal;
+  letter-spacing: 0;
+  @include margin-top(default);
+  @include Metadata;
+
+  @media only screen and (min-width: $breakpoint--sm) {
+    @include margin-left(large);
+  }
+}
+
+.Pullquote-cite:before {
+  content:"— ";
+}
+
+.Pullquote-cite .Link {
+  @include text-color(x-light);
+}
+
+.Pullquote-cite .Link:active,
+.Pullquote-cite .Link:focus,
+.Pullquote-cite .Link:hover {
+  @include Link--colored;
+}

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="l-Wrapper l-Wrapper--row u-text-align--center" role="main">
+
+  <div class="row">
+
+    <div class="column">
+      
+      <div class="u-margin-bottom--large">
+        
+        <div class="row">
+          <div class="column Feature-description">
+            {% if page.metadata_string %}
+            <span class="Metadata Metadata--editorialPrehead">{{ page.metadata_string }}</span>
+            {% endif %}
+            <h2 class="Heading Heading--xxx-large u-margin-top--0">
+              <a class="Heading-link" href="{{ page.permalink }}">
+                {{ page.title }}
+              </a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="u-margin-bottom--small">
+              {% include release_links.html %}              
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="u-margin-top--default">
+              {% include release_artwork.html %}
+            </div>
+          </div>      
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="WrittenContent WrittenContent--constrained u-margin-left--auto u-margin-right--auto">
+              {{ page.excerpt }}
+              {% comment %}
+              <div class="u-margin-top--xx-large">
+                {{ content }}
+              </div>
+              {% endcomment %}
+            </div>
+          </div>      
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,60 @@
+/* Z-indexes
+   ========================================================================== */
+
+/**
+ * Our z-index scale allows us to manage the application of `z-index` and have
+ * an at-a-glance reference for vertical layers. Always add new `z-index`
+ * applications here instead of applying the property arbitrarily — doing so
+ * prevents any unwanted behaviour and bugs.
+ *
+ * Note: remember an element needs to have a `position` property applied to have
+ * any `z-index` value take effect
+ *
+ * Thanks go to @fat for the inspiration:
+ * https://gist.github.com/fat/1f6da6b3bd0311a1f8a0
+ */
+
+/**
+ * Applications
+ *
+ * Always use the exact component name as it appears in the component's own
+ * partial. Doing so meaningfully links the mixin and the component, and
+ * ensures consistency in how the component or component modifier is referenced
+ * across the code base (less confusion and redundancy when we decide to rename
+ * component at any point).
+ */
+
+/* z-index(-1)
+   ========================================================================== */
+
+@mixin z-index--html-before {
+  @include z-index(-1);
+}
+
+
+/* z-index(1)
+   ========================================================================== */
+
+@mixin z-index--body-after {
+  @include z-index(1);
+}
+
+@mixin z-index--MediaContainer--mobile--primary {
+  @include z-index(1);
+}
+
+
+/* z-index(2)
+   ========================================================================== */
+
+@mixin z-index--MediaContainer--mobile--primary--video--inline {
+  @include z-index(2);
+}
+
+
+/* z-index(3)
+   ========================================================================== */
+
+@mixin z-index--body-before {
+  @include z-index(3);
+}

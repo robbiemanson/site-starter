@@ -1,0 +1,80 @@
+/* Metadata
+   ========================================================================== */
+
+@mixin Metadata {
+  display: block;
+  @include font-size(small);
+  @include font-weight(normal);
+  @include line-height(7);
+  @include text-color(light);
+  @include rm-font-family(alt);
+
+  @media only screen and (min-width: $breakpoint--sm) {
+    @include font-size(default);
+  }
+}
+
+.Metadata {
+  @include Metadata;
+}
+
+.Metadata--highContrast {
+  color: $text-color--dark;
+}
+
+.Metadata--editorialSubhead {
+  margin-top: -0.75em;
+  margin-bottom: 2em;
+}
+
+.Heading--x-large + .Metadata--editorialSubhead {
+  margin-top: -0.5em;
+}
+
+.Metadata--editorialPrehead {
+  margin-bottom: 1em;
+}
+
+.Metadata--limitWidth {
+  max-width: 44em;
+}
+
+.Metadata--figcaption {
+  margin: 0.5em 0;
+  text-align: right;
+  @include Metadata;
+}
+
+.Metadata--figcaption--text-align--left {
+  text-align: left;
+}
+
+.Metadata--subeading {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  @include font-size(small);
+  @include margin-bottom(default);
+  @include text-color(gray-7);
+}
+
+.Metadata--large {
+  @include Metadata;
+  @include font-size(default);
+
+  @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+    @include font-size(large);
+  }
+}
+
+.Metadata--small {
+  @media only screen and (min-width: $breakpoint--sm) {
+    @include font-size(small);
+  }
+}
+
+.Metadata-bold {
+  font-weight: normal;
+  @include rm-font-family(alt-bold);
+  @include Neuzeit-letter-spacing--reduced;
+}

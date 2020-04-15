@@ -1,0 +1,27 @@
+<div class="MediaContainer">
+    {% if post.prerelease_links or page.prerelease_links %}
+
+	{% if page.is_home != null %}
+	<a href="{{ post.link_presave_master }}">
+	  <img alt="Artwork for {{ post.title }}" class="Media Media--image Media--image--feature" src="{{ site.asset_url }}/assets/images/{{ post.artwork_title }}" />
+	</a>
+	{% else %}
+    <a href="{{ page.link_presave_master }}">
+	  <img alt="Artwork for {{ page.title }}" class="Media Media--image Media--image--feature" src="{{ site.asset_url }}/assets/images/{{ page.artwork_title }}" />
+    </a>
+	{% endif %}
+
+    {% else %}
+
+    {% if page.is_home != null %}
+    <a href="{{ post.link_listen }}">
+      <img alt="Artwork for {{ post.title }}" class="Media Media--image Media--image--feature" src="{{ site.asset_url }}/assets/images/{{ post.artwork_title }}" />
+    </a>
+    {% else %}
+    <a href="{{ page.link_listen }}">
+      <img alt="Artwork for {{ page.title }}" class="Media Media--image Media--image--feature" src="{{ site.asset_url }}/assets/images/{{ page.artwork_title }}" />
+    </a>
+    {% endif %}
+
+    {% endif %}
+</div>

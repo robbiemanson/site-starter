@@ -1,0 +1,11 @@
+<ul class="NavList" role="navigation">
+  {% for link in site.navigation_secondary_1 %}
+  <li>
+  {% if page.nav_category == link.nav_category %}
+  	<a href="{{link.url}}" class="NavLink NavLink--current">{{link.title}}</a>
+  {% else %}
+  	<a href="{{link.url}}" class="NavLink">{{link.title}}</a>
+  {% endif %}
+  </li>
+  {% endfor %}
+</ul>

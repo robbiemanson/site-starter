@@ -1,0 +1,177 @@
+/* Gradiant stop colour variables
+   ========================================================================== */
+
+$gradient-1--color-1: hsla(324, 56%, 35%, 1);
+$gradient-1--color-2: hsla(295, 43%, 33%, 1);
+$gradient-2--color-1: hsla(217, 28%, 40%, 1);
+$gradient-2--color-2: hsla(264, 30%, 36%, 1);
+$gradient-3--color-1: hsla(236, 36%, 46%, 1);
+$gradient-3--color-2: hsla(215, 48%, 45%, 1);
+
+// .List--gradiated li .Heading > a {
+//   color: $gradient-6--color-1;
+// }
+//
+// .List--gradiated li:nth-child(150n + 5) .Heading > a {
+//   color: gradient-color-at($gradient-6--color-1, $gradient-6--color-2, 25%);
+// }
+//
+// .List--gradiated li:nth-child(150n + 10) .Heading > a {
+//   color: gradient-color-at($gradient-6--color-1, $gradient-6--color-2, 50%);
+// }
+//
+// .List--gradiated li:nth-child(150n + 15) .Heading > a {
+//   color: gradient-color-at($gradient-6--color-1, $gradient-6--color-2, 75%);
+// }
+//
+// .List--gradiated li:nth-child(150n + 20) .Heading > a {
+//   color: gradient-color-at($gradient-6--color-1, $gradient-6--color-2, 100%);
+// }
+//
+// .List--gradiated li:last-child .Heading > a {
+//   color: $gradient-6--color-2;
+// }
+
+
+/* Gradiated mixin
+   ========================================================================== */
+
+/*
+http://jasonkinney.me/nth-child-background-color-mixin/
+$max-count is the maximum amount of colors you'll want
+$color-frequency is how intense you want the color change to be. Lower # = more intense changes
+*/
+
+@mixin colors($max-count, $color-frequency){
+  $color: 360/$max-count;
+
+  @for $i from 1 through $max-count {
+    &:nth-child(#{$max-count}n + #{$i}) .Heading > a {
+      color: hsla(($i - 1)*($color / $color-frequency), 100%, 60%, 1) !important;
+    }
+  }
+}
+
+.List--gradiated li {
+  /* @include colors(150, 1); //($number of color, $color-frequency) */
+}
+
+
+@if $transforms-and-gradients == true {
+
+  /* Utility to fill text with gradients
+     ========================================================================== */
+
+  .u-text-gradient {
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-fill-color: transparent !important;
+  }
+
+  .u-text-gradienter {
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-fill-color: transparent !important;
+  }
+
+}
+
+
+/* Purple > Red */
+@mixin gradient-1 {
+  background: -webkit-linear-gradient(45deg, $gradient-1--color-1 0%, $gradient-1--color-2 100%);
+  background:    -moz-linear-gradient(45deg, $gradient-1--color-1 0%, $gradient-1--color-2 100%);
+  background:     -ms-linear-gradient(45deg, $gradient-1--color-1 0%, $gradient-1--color-2 100%);
+  background:      -o-linear-gradient(45deg, $gradient-1--color-1 0%, $gradient-1--color-2 100%);
+  background:         linear-gradient(45deg, $gradient-1--color-1 0%, $gradient-1--color-2 100%);
+}
+
+@if $transforms-and-gradients == true {
+
+  html.u-gradient-1 .u-text-gradient,
+  html.u-gradient-1 .u-gradient-bg,
+  .u-gradient-bg--1 {
+    @include gradient-1;
+  }
+
+}
+
+
+/* Dark Purple > Moody Aqua */
+@mixin gradient-2 {
+  background: -webkit-linear-gradient(45deg, $gradient-2--color-1 0%, $gradient-2--color-2 100%);
+  background:    -moz-linear-gradient(45deg, $gradient-2--color-1 0%, $gradient-2--color-2 100%);
+  background:     -ms-linear-gradient(45deg, $gradient-2--color-1 0%, $gradient-2--color-2 100%);
+  background:      -o-linear-gradient(45deg, $gradient-2--color-1 0%, $gradient-2--color-2 100%);
+  background:         linear-gradient(45deg, $gradient-2--color-1 0%, $gradient-2--color-2 100%);
+}
+
+@if $transforms-and-gradients == true {
+
+  html.u-gradient-2 .u-text-gradient,
+  html.u-gradient-2 .u-gradient-bg,
+  .u-gradient-bg--2 {
+    @include gradient-2;
+  }
+
+}
+
+
+/* Dark Voilet > Dull Green Sea */
+@mixin gradient-3 {
+  background: -webkit-linear-gradient(45deg, $gradient-3--color-1 0%, $gradient-3--color-2 100%);
+  background:    -moz-linear-gradient(45deg, $gradient-3--color-1 0%, $gradient-3--color-2 100%);
+  background:     -ms-linear-gradient(45deg, $gradient-3--color-1 0%, $gradient-3--color-2 100%);
+  background:      -o-linear-gradient(45deg, $gradient-3--color-1 0%, $gradient-3--color-2 100%);
+  background:         linear-gradient(45deg, $gradient-3--color-1 0%, $gradient-3--color-2 100%);
+}
+
+@if $transforms-and-gradients == true {
+
+  html.u-gradient-3 .u-text-gradient,
+  html.u-gradient-3 .u-gradient-bg,
+  .u-gradient-bg--3 {
+    @include gradient-3;
+  }
+
+}
+
+
+@if $transforms-and-gradients == true {
+
+  html.u-gradient-1 .u-background-blend-bg {
+    background-color: $gradient-1--color-1;
+  }
+
+  html.u-gradient-2 .u-background-blend-bg {
+    background-color: $gradient-2--color-1;
+  }
+
+  html.u-gradient-3 .u-background-blend-bg {
+    background-color: $gradient-3--color-1;
+  }
+
+}
+
+.u-mix-blend-mode--screen {
+  background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
+}
+
+.u-mix-blend-mode--multiply {
+  mix-blend-mode: multiply;
+}
+
+.GradientTestContainer {
+  @include flexbox(flex);
+}
+
+.GradientTest {
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  @include flex-grow(1);
+}

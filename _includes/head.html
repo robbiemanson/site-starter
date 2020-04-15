@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title != "Home" %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="keywords" content="{{ site.keywords }}" />
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.title }}">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="320">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="icon" type="image/png" href="{{ "/favicon.png" | prepend: site.asset_url }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.asset_url }}">
+  <link rel="canonical" href="http://examplesite.com{{ page.url | replace:'index.html',''}}">
+  {% if page.hide_from_search_engines != null or site.asset_url == 'http://stagingURL.cloudfront.net' %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <meta property="og:url" content="http://examplesite.com/" />
+  {% if page.is_home != null %}
+  <meta property="og:title" content="{{ site.title }}" />
+  {% else %}
+  <meta property="og:title" content="{{ page.title }} — {{ site.title }}" />
+  {% endif %}
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:image" content="{{ site.asset_url }}/assets/images/facebook/fb_og_1200x600.jpg"/>
+</head>

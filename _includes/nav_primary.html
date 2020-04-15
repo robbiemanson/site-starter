@@ -1,0 +1,11 @@
+<ul class="NavList NavList--inline NavList--inline--spaced" role="navigation">
+  {% for link in site.navigation_primary %}
+  <li>
+  {% if page.nav_category == link.nav_category %}
+  	<a href="{{link.url}}" class="NavLink NavLink--bold NavLink--current">{{link.title}}</a>
+  {% else %}
+  	<a href="{{link.url}}" class="NavLink NavLink--bold">{{link.title}}</a>
+  {% endif %}
+  </li>
+  {% endfor %}
+</ul>

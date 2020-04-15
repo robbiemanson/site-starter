@@ -1,0 +1,148 @@
+/* Links
+   ========================================================================== */
+
+$color--link: $color--gray-2;
+$color--link--hover: darken($color--link, 15%);
+
+@mixin Link--colored($important: null) {
+  color: $color--link $important;
+}
+
+@mixin Link--colored--hover($important: null) {
+  color: $color--link--hover $important;
+}
+
+.Link,
+.Heading-link {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 96%;
+  text-decoration: none;
+  @include text-color(default);
+}
+
+@media not all, only screen and (min-resolution: 2dppx), only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .Link {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5) 75%);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5) 75%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5) 75%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5) 75%);
+    background-repeat: repeat-x;
+  }
+}
+
+.Heading-link {
+  background: none !important;
+  @include text-color(default);
+}
+
+.Link:active,
+.Link:focus,
+.Link:hover {
+  @include Link--colored;
+}
+
+@if $transforms-and-gradients == true {
+
+  html.u-gradient-1 {
+    .Heading-link,
+    .Link:active,
+    .Link:focus,
+    .Link:hover {
+      color: $gradient-1--color-1;
+    }
+    .Heading-link:active,
+    .Heading-link:focus,
+    .Heading-link:hover {
+      color: $gradient-1--color-2 !important;
+    }
+  }
+
+  html.u-gradient-2 {
+    .Heading-link,
+    .Link:active,
+    .Link:focus,
+    .Link:hover {
+      color: $gradient-2--color-1;
+    }
+    .Heading-link:active,
+    .Heading-link:focus,
+    .Heading-link:hover {
+      color: $gradient-2--color-2 !important;
+    }
+  }
+
+  html.u-gradient-3 {
+    .Heading-link,
+    .Link:active,
+    .Link:focus,
+    .Link:hover {
+      color: $gradient-3--color-1;
+    }
+    .Heading-link:active,
+    .Heading-link:focus,
+    .Heading-link:hover {
+      color: $gradient-3--color-2 !important;
+    }
+
+  }
+
+}
+
+.has-rightArrow:after {
+  content: "→";
+  display: inline-block;
+  margin-left: 0.25em;
+  @include text-color(xx-light);
+}
+
+.has-rightArrow:active:after,
+.has-rightArrow:focus:after,
+.has-rightArrow:hover:after {
+  @include text-color(x-light);
+}
+
+.Link--Metadata {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
+  @include text-color(gray-6, !important);
+}
+
+@media not all, only screen and (min-resolution: 2dppx), only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .Link--Metadata {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.3) 75%);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.3) 75%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.3) 75%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,0.3) 75%);
+  }
+}
+
+.Link--Metadata:active,
+.Link--Metadata:focus,
+.Link--Metadata:hover {
+  @include text-color(light, !important);
+}
+
+.LinkEmph {
+  text-decoration: none;
+  @include font-weight(semi-bold);
+  @include text-color(gray-1);
+}
+
+.LinkEmph:active,
+.LinkEmph:focus,
+.LinkEmph:hover {
+  text-decoration: underline;
+}
+
+.LinkEmph:active.has-rightArrow:after,
+.LinkEmph:focus.has-rightArrow:after,
+.LinkEmph:hover.has-rightArrow:after {
+  @include text-color(default);
+}

@@ -1,0 +1,27 @@
+/* Table
+   ========================================================================== */
+
+.Table {
+  border-color: transparent;
+  border-spacing: 0;
+  margin-bottom: 2em;
+  text-align: left;
+  width: 100%;
+  @include font-size(default);
+  @include line-height(tight);
+  @include rm-font-family(alt);
+}
+
+.Table td,
+.Table th {
+  padding: 0.5em 0;
+}
+
+.Table thead th {
+  border-bottom: 1px solid $color--gray-10;
+  font-weight: normal;
+}
+
+.Table thead + tbody tr:first-child td {
+  padding-top: 1em;
+}

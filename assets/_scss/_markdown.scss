@@ -1,0 +1,120 @@
+/*
+ * Styles for displaying rendered Markdown code examples
+ */
+
+$margin: 1rem;
+
+.DocsExample {
+  margin: 0 auto;
+  max-width: $row-max-width;
+  @include margin-bottom(x-large);
+}
+
+.DocsExample-render *:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body {
+  @include font-family(default);
+  @include line-height(default);
+}
+
+.markdown-body .page-title + .markdown-body > p:first-child {
+  @include font-weight(light, !important);
+  @include font-size(x-large, !important);
+  @include line-height(tight, !important);
+  @include text-color(gray-6, !important);
+}
+
+// Inline code snippets
+.markdown-body code,
+.markdown-body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px; // don't add padding, gives scrollbars
+
+  &:before,
+  &:after {
+    letter-spacing: -0.2em; // this creates padding
+    content: "\00a0";
+  }
+
+  br { display: none; }
+}
+
+.markdown-body del code { text-decoration: inherit; }
+
+// Code tags within code blocks (<pre>s)
+.markdown-body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: $margin;
+}
+
+.markdown-body code,
+.markdown-body pre > code {
+  @include font-family(monospace);
+  @include font-size(x-small);
+  @include line-height(tight, !important);
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  margin: 0;
+  padding: $margin;
+  overflow: auto;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+
+  &:before,
+  &:after {
+    content: normal;
+  }
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}

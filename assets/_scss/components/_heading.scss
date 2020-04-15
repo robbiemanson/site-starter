@@ -1,0 +1,124 @@
+/* Heading
+   ========================================================================== */
+
+/**
+ * 1. Prevent descenders from being clipped when `line-height` is tight
+ */
+
+.Heading {
+  font-weight: normal;
+  /* 1 */
+  padding-bottom: 0.1em;
+  @include rm-font-family(alt-bold);
+  @include line-height(xx-tight);
+  @include text-color(gray-1);
+}
+
+.Heading--xxx-large {
+  margin: 0 0 0.5em 0;
+  @include font-size(11);
+  @include Neuzeit-letter-spacing;
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    @include font-size(13);
+  }
+}
+
+.Heading--display {
+  margin: 0 0 0.5em 0;
+  @include font-size(9);
+  @include Neuzeit-letter-spacing;
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    @include font-size(16);
+  }
+}
+
+.Heading--1,
+.Heading--xx-large {
+  margin: 0 0 0.5em 0;
+  @include font-size(9);
+  @include Neuzeit-letter-spacing;
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    @include font-size(11);
+  }
+}
+
+.Heading--2,
+.Heading--x-large {
+	 margin: 1.25em 0 0.5em 0;
+   @include font-size(7);
+   @include Neuzeit-letter-spacing--reduced;
+
+   @media only screen and (min-width: $breakpoint--x-sm) {
+     @include font-size(9);
+   }
+   @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+     @include font-size(10);
+   }
+}
+
+.Heading--3,
+.Heading--large {
+  margin: 1.5em 0 0.25em 0;
+  @include font-size(6);
+  @include Neuzeit-letter-spacing--reduced;
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    margin-bottom: 0.5em;
+    @include font-size(7);
+  }
+  @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+    @include font-size(8);
+  }
+}
+
+.Heading--4,
+.Heading--small {
+  margin: 0.5rem 0 0.5rem 0;
+  @include font-size(6);
+  @include Neuzeit-letter-spacing--reduced;
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    @include font-size(7);
+  }
+}
+
+.Heading--5,
+.Heading--x-small {
+  margin: 0.5em 0 0.5em 0;
+  @include font-size(5);
+}
+
+.Heading--6,
+.Heading--xx-small {
+  margin: 0.5em 0 0.5em 0;
+  @include font-size(4);
+}
+
+.Heading--3 + .Heading--4 {
+  @include margin-top(6);
+}
+
+.Heading--minor {
+  margin: 1.5em 0 0.25em 0;
+  @include font-size(6);
+  @include font-weight(normal);
+  @include line-height(7);
+  @include text-color(x-light);
+  @include rm-font-family(alt);
+  @include Neuzeit-letter-spacing--reduced;
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    margin-bottom: 0.5em;
+    @include font-size(7);
+  }
+  @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+    @include font-size(8);
+  }
+}
+
+.Heading a {
+  text-decoration: none;
+}

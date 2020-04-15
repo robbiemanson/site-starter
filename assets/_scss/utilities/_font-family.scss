@@ -1,0 +1,95 @@
+/* Fonts
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Inter:400,400i,600');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900,900i');
+
+// @font-face {
+//   font-family: 'BerlingskeSerifXBd';
+//   src:  url('../fonts/berlingske_serif/BerlingskeSerif-XBd.7d88e418.woff2') format('woff2'),
+//         url('../fonts/berlingske_serif/BerlingskeSerif-XBd.46c46ced.woff') format('woff'),
+//         url('../fonts/berlingske_serif/BerlingskeSerif-XBd.d837917f.ttf') format('truetype');
+// }
+
+
+/* `font-family` values
+   ========================================================================== */
+
+$rm-font-family--1: "Inter", Arial, Helvetica, sans-serif;
+$rm-font-family--2: "Inter", Arial, Helvetica, sans-serif;
+$rm-font-family--3: "Merriweather", "Georgia", "Times New Roman", serif;
+$rm-font-family--4: "Monaco", "Courier New", Courier, monospace;
+$rm-font-family--5: "Inter", Arial, Helvetica, sans-serif;
+$rm-font-family--6: "Inter", Arial, Helvetica, sans-serif;
+$rm-font-family--7: "Inter", Arial, Helvetica, sans-serif;
+
+
+
+/* `font-family` aliases
+   ========================================================================== */
+
+$rm-font-family--default:   $rm-font-family--1;
+$rm-font-family--semibold:  $rm-font-family--5;
+$rm-font-family--bold:      $rm-font-family--6;
+$rm-font-family--black:     $rm-font-family--7;
+$rm-font-family--alt:       $rm-font-family--2;
+$rm-font-family--alt-bold:  $rm-font-family--3;
+$rm-font-family--monospace: $rm-font-family--4;
+
+
+/* Map
+   ========================================================================== */
+
+$rm-font-family-values: (
+  1:         $rm-font-family--1,
+  2:         $rm-font-family--2,
+  3:         $rm-font-family--3,
+  4:         $rm-font-family--4,
+  default:   $rm-font-family--default,
+  semibold:  $rm-font-family--semibold,
+  bold:      $rm-font-family--bold,
+  black:     $rm-font-family--black,
+  alt:       $rm-font-family--alt,
+  alt-bold:  $rm-font-family--alt-bold,
+  monospace: $rm-font-family--monospace
+);
+
+
+/* Mixin
+   ========================================================================== */
+
+/**
+ * Example usage:
+ * `@include rm-font-family(default);`
+ * `@include rm-font-family(alt);`
+ * `@include rm-font-family(alt-bold, !important);`
+ */
+
+@mixin rm-font-family($value, $important: null) {
+  font-family: map-get($rm-font-family-values, $value) $important;
+}
+
+
+/* Utility classes
+   ========================================================================== */
+
+@if $u-classes-rm-font-family == true {
+
+  @each $rm-font-family, $rm-font-family-value in $rm-font-family-values {
+
+    .u-font-family--#{$rm-font-family} {
+      font-family: $rm-font-family-value !important;
+    }
+
+  }
+
+}
+
+@mixin Neuzeit-letter-spacing($important: null) {
+  letter-spacing: 0 $important;
+}
+
+@mixin Neuzeit-letter-spacing--reduced($important: null) {
+  letter-spacing: 0 $important;
+}

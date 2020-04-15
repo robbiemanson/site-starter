@@ -1,0 +1,45 @@
+/* Setting to `false` won't render the utility classes */
+$u-classes-background:           false;
+$u-classes-border-radius:        false;
+$u-classes-border:               true;
+$u-classes-box-sizing:           false;
+$u-classes-clear:                false;
+$u-classes-display:              true;
+$u-classes-flex-align-content:   false;
+$u-classes-flex-align-items:     false;
+$u-classes-flex-align-self:      false;
+$u-classes-flex-basis:           false;
+$u-classes-flex-direction:       false;
+$u-classes-flex-grow:            false;
+$u-classes-flex-justify-content: false;
+$u-classes-flex-shrink:          false;
+$u-classes-flex-wrap:            false;
+$u-classes-flexbox:              false;
+$u-classes-float:                true;
+$u-classes-rm-font-family:       true;
+$u-classes-font-family:          true;
+$u-classes-font-size:            true;
+$u-classes-font-weight:          true;
+$u-classes-height-width:         true;
+$u-classes-interaction:          false;
+$u-classes-letter-spacing:       true;
+$u-classes-line-height:          true;
+$u-classes-list-item-spacing:    true;
+$u-classes-list-style:           false;
+$u-classes-margin:               true;
+$u-classes-opacity:              false;
+$u-classes-overflow:             false;
+$u-classes-padding:              true;
+$u-classes-positioning:          false;
+$u-classes-text-color:           true;
+$u-classes-text-decoration:      true;
+$u-classes-text-formatting:      true;
+$u-classes-vertical-align:       false;
+$u-classes-z-index:              false;
+
+/* Leave quotes empty if this project doesn't have custom aliases */
+$project: "";
+
+/* Import utilities and other CSS dependencies */
+@import "vendor/_normalize";
+@import "../../node_modules/rm-css-utilities/_utilities";

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="l-Wrapper l-Wrapper--row" role="main">
+
+  <div class="row">
+    <div class="column medium-4">
+      <div class="column-content column-content--medium">
+        <h1 class="Heading Heading--xx-large">
+          {{ page.title }}
+        </h1>
+        {% if page.excerpt %}
+        <span class="Metadata Metadata--editorialSubhead">
+          {{ page.excerpt }}
+        </span>
+        {% endif %}        
+      </div>
+    </div>
+
+    <div class="column medium-8">
+      <ol class="List List--features List--gradiated">
+        {{ content }}
+      </ol>
+    </div>
+  </div>
+
+</div>
