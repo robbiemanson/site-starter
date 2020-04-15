@@ -21,7 +21,7 @@ If you haven't used Site Starter before and might not have all required dependen
 4. `brew install graphicsmagick` (ditto)
 5. `npm install` (install NPM packages)
 
-Now just open the site in your text editor and away you go. Some important changes you'' want to make:
+Now just open the site in your text editor and away you go. Some important changes you'll want to make:
 
 1. Find and replace all instances of `examplesite.com` with URL of new site
 2. Find and replace instances of `Site Owner`
