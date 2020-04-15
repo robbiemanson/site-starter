@@ -115,6 +115,6 @@ source /usr/local/share/chruby/auto.sh
 ```bash
 gem install bundler -v '1.13.7'
 ```
-9. Install [Node.js] for npm: https://nodejs.org
+9. [Install Node.js](https://nodejs.org) for npm usage
 
 Now follow instructions to [configure a new site locally](#configure-new-site-locally)!
