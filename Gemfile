@@ -7,7 +7,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.3', :patchlevel => '222'
 
-gem 'jekyll', '3.6.2'
+gem 'jekyll', '3.6.3'
 gem 'rouge', '1.10.1'
 gem 'sass', '3.4.18'
 gem 's3_website', '3.4.0'
