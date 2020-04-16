@@ -70,11 +70,14 @@ PLATFORMS
 
 DEPENDENCIES
   code-example (= 0.1.0)!
-  jekyll
-  jekyll_inline_highlight
-  rouge
-  s3_website
-  sass
+  jekyll (= 3.6.2)
+  jekyll_inline_highlight (= 3.0)
+  rouge (= 1.10.1)
+  s3_website (= 3.4.0)
+  sass (= 3.4.18)
+
+RUBY VERSION
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.13.7
