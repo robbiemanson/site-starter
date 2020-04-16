@@ -116,9 +116,9 @@ source /usr/local/share/chruby/auto.sh
 gem install bundler -v '1.13.7'
 ```
 9. [Install Node.js v6.9.4](https://nodejs.org/download/release/v6.9.4/node-v6.9.4.pkg) for npm usage (must be v6.9.4)
-10. Install Gulp globally
+10. Install Gulp 1.2.2 globally
 ```bash
-npm install gulp-cli -g
+sudo npm install gulp-cli@1.2.2 -g
 ```
 
 Now follow instructions to [configure a new site locally](#configure-new-site-locally)!
