@@ -12,14 +12,14 @@ My standard website starter template. Jekyll build hosted on S3/Cloudfront.
 
 ## Getting started
 
-If you don't have Homebrew, Ruby, Bundler or Node.js already – follow the [starting from scratch](#starting-from-scratch) instructions first. 
+If you don't have Homebrew, Ruby, Bundler, Node.js or Gulp already – follow the [starting from scratch](#starting-from-scratch) instructions first. 
 
 ### Configure new site locally
 1. `git clone git@github.com:robbiemanson/site-starter.git` into a new directory, or download zip 
 2. `bundle install` (to install Gems)
 3. `brew install imagemagick` (for Gulp-powered image resizing)
 4. `brew install graphicsmagick` (ditto)
-5. `npm install` (install NPM packages)
+5. `npm install` (install NPM packages; restart shell)
 
 Now just open the site in your text editor and away you go. Some important changes you'll want to make:
 
@@ -102,11 +102,11 @@ brew install chruby
 ```bash
 chruby 2.3.3
 ```
-6. Add line to `~/.bashrc` or `~/.zshrc`:
+6. Add line to `~/.bashrc` or `~/.zshrc`
 ```bash
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 ```
-7. Enable auto-switching of Ruby version by adding these lines to `~/.bashrc` or `~/.zshrc`: 
+7. Enable auto-switching of Ruby version by adding these lines to `~/.bashrc` or `~/.zshrc`
 ```bash
 source /usr/local/share/chruby/chruby.sh 
 source /usr/local/share/chruby/auto.sh
@@ -115,6 +115,10 @@ source /usr/local/share/chruby/auto.sh
 ```bash
 gem install bundler -v '1.13.7'
 ```
-9. [Install Node.js](https://nodejs.org) for npm usage
+9. [Install Node.js v6.9.4](https://nodejs.org/download/release/v6.9.4/node-v6.9.4.pkg) for npm usage (must be v6.9.4)
+10. Install Gulp globally
+```bash
+npm install gulp-cli -g
+```
 
 Now follow instructions to [configure a new site locally](#configure-new-site-locally)!
