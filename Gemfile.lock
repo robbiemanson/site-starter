@@ -1,5 +1,5 @@
 PATH
-  remote: ./_plugins/code-example
+  remote: _plugins/code-example
   specs:
     code-example (0.1.0)
 
@@ -23,7 +23,7 @@ GEM
       deep_merge (~> 1.0.0)
     deep_merge (1.0.1)
     dotenv (1.0.2)
-    ffi (1.9.18)
+    ffi (1.12.2)
     forwardable-extended (2.6.0)
     jekyll (3.6.2)
       addressable (~> 2.4)
