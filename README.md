@@ -68,17 +68,6 @@ This will open a new browser tab running Browsersync and auto-reload when any HT
 3. `s3_website push --config-dir=config_production --dry-run` to check changes before pushing
 4. `s3_website push --config-dir=config_production`
 
-## To do
-* Clean up unused legacy robbiemanson.com stuff
-* Pull more of current bespoke CSS into [rm-css-utilities](https://github.com/robbiemanson/rm-css-utilities)
-* Remove any unused/redundant layouts
-* Fix intermittent `npm install` issue:
-```bash
-npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
-npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 install: `node-gyp rebuild`
-npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
-```
-
 ## Writing blog posts
 Follow instructions at: http://jekyllrb.com/docs/drafts/
 
