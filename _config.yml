@@ -62,14 +62,6 @@ navigation_primary:
   url: /contact/
   nav_category: contact
 
-navigation_footer:
-- title: Email
-  url: mailto:example@examplesite.com
-  nav_category: 
-- title: Guide
-  url: /how-to-self-release-an-album/
-  nav_category: guide
-
 # Build settings
 #markdown: redcarpet
 #redcarpet:
