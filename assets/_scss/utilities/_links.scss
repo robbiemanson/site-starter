@@ -1,7 +1,7 @@
 /* Links
    ========================================================================== */
 
-$color--link: $color--gray-2;
+$color--link: $color--gray-1;
 $color--link--hover: darken($color--link, 15%);
 
 @mixin Link--colored($important: null) {
@@ -22,7 +22,7 @@ $color--link--hover: darken($color--link, 15%);
 	background-size: 2px 2px;
 	background-position: 0 96%;
   text-decoration: none;
-  @include text-color(default);
+  @include text-color(gray-2);
 }
 
 @media not all, only screen and (min-resolution: 2dppx), only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -37,7 +37,7 @@ $color--link--hover: darken($color--link, 15%);
 
 .Heading-link {
   background: none !important;
-  @include text-color(default);
+  @include text-color(gray-2);
 }
 
 .Link:active,
@@ -144,5 +144,5 @@ $color--link--hover: darken($color--link, 15%);
 .LinkEmph:active.has-rightArrow:after,
 .LinkEmph:focus.has-rightArrow:after,
 .LinkEmph:hover.has-rightArrow:after {
-  @include text-color(default);
+  @include text-color(gray-2);
 }
