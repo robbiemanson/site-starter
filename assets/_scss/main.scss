@@ -23,18 +23,32 @@ $transforms-and-gradients: false;
 @import "vendor/fresco/_fresco";
 
 
-/* Bespoke project utilities
+/* Utilities prerequisites – ensure variables are usable by other utilities
    ========================================================================== */
 
-@import "utilities/_clearfix";
 @import "utilities/_font-family";
-@import "utilities/_gradients";
 @import "utilities/_grid";
+
+
+/* Project utilities
+   ========================================================================== */
+
+@import "utilities/_border";
+@import "utilities/_clearfix";
+@import "utilities/_display";
+@import "utilities/_float";
+@import "utilities/_font-size";
+@import "utilities/_gradients";
+@import "utilities/_image-treatments";
 @import "utilities/_leader";
 @import "utilities/_links";
+@import "utilities/_margin";
 @import "utilities/_metadata";
 @import "utilities/_syntax";
+@import "utilities/_text-align";
+@import "utilities/_text-theme";
 @import "utilities/_z-index";
+@import "utilities/_visibility";
 
 
 /* Base styles
@@ -83,12 +97,25 @@ button {
 
 @import "components/_pullquote";
 @import "components/_button";
+@import "components/_card";
+@import "components/_comma-separator.scss";
+@import "components/_editorial";
+@import "components/_feature";
+@import "components/_forms";
 @import "components/_heading";
+@import "components/_icon";
+@import "components/_leader";
 @import "components/_list";
+@import "components/_media";
+@import "components/_navigation";
 @import "components/_navlist";
 @import "components/_table";
-@import "components/_video";
+@import "components/_video-js";
+@import "components/_wall";
 
 @import "_markdown";
+
+/* Bespoke project styles that aren't components
+   ========================================================================== */
 
 @import "_project";
