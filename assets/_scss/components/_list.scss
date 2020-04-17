@@ -73,22 +73,22 @@
   margin-bottom: 0;
 }
 
-.List--features {
+.List--headingBodyPair {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.List--features .List-item {
+.List--headingBodyPair .List-item {
   @include margin-bottom(large);
 }
 
-.List--features .List-item .Heading {
+.List--headingBodyPair .List-item .Heading {
   margin-top: 0;
   @include margin-bottom(xx-small);
 }
 
-.List--features .List-item .Metadata--excerpt-text {
+.List--headingBodyPair .List-item .Metadata--excerpt-text {
   margin-bottom: 0;
 }
 
