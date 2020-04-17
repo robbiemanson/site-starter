@@ -62,14 +62,14 @@ $ gulp photos
 ### Staging deploy (staging.examplesite.com)
 1. Ensure `asset_url` in `_config.yml` is pointing to correct CloudFront URL
 2. `bundle exec jekyll serve` > `gulp deploy-prep` > QA, especially: /pattern-library
-3. `s3_website push --config-dir=staging --dry-run` to check changes before pushing
-4. `s3_website push --config-dir=staging`
+3. `s3_website push --config-dir=config_staging --dry-run` to check changes before pushing
+4. `s3_website push --config-dir=config_staging`
 
 ### Production deploy
 1. Ensure `asset_url` in `_config.yml` is pointing to correct CloudFront URL
 2. `bundle exec jekyll serve` > `gulp deploy-prep` > QA, especially: /pattern-library
-3. `s3_website push --config-dir=production --dry-run` to check changes before pushing
-4. `s3_website push --config-dir=production`
+3. `s3_website push --config-dir=config_production --dry-run` to check changes before pushing
+4. `s3_website push --config-dir=config_production`
 
 ## To do
 * Clean up unused legacy robbiemanson.com stuff
