@@ -25,6 +25,7 @@ Now just open the site in your text editor and away you go. Some important chang
 
 1. Find and replace all instances of `examplesite.com` with URL of new site
 2. Find and replace instances of `Site Owner`
+3. Replace instances of `http://stagingAssetURL.com` with staging asset URL (e.g. Cloudfront distribution URL)
 3. Replace `favicon.png`
 
 ### Configure hosting

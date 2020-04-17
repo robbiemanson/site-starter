@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="{{ "/favicon.png" | prepend: site.asset_url }}" />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.asset_url }}">
   <link rel="canonical" href="http://examplesite.com{{ page.url | replace:'index.html',''}}">
-  {% if page.hide_from_search_engines != null or site.asset_url == 'http://stagingURL.cloudfront.net' %}
+  {% if page.hide_from_search_engines != null or site.asset_url == 'http://stagingAssetURL.com' %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
   <meta property="og:url" content="http://examplesite.com/" />

@@ -17,7 +17,7 @@ github_username: githubname
 # asset_url: http://assets.examplesite.com
 
 # Staging (note: this is referenced in _head.html) to hide staging from search engines):
-# asset_url: http://db0jskgwwrkbn.cloudfront.net
+# asset_url: http://stagingAssetURL.com
 
 port: 5001
 
