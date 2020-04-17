@@ -1,0 +1,49 @@
+/* Image treatments
+   ========================================================================== */
+
+.u-background-blend-bg {
+  mix-blend-mode: multiply;
+}
+
+.u-background-blend-image {
+  mix-blend-mode: screen;
+}
+
+.u-image-clip {
+  -webkit-clip-path: polygon(0 1%, 100% 2%, 99% 99%, 2% 100%);
+  clip-path: polygon(0 1%, 100% 2%, 99% 99%, 2% 100%);
+}
+
+.u-imageOverlay {
+  background-color: rgba(0,0,0,0.3);
+  background-size: cover;
+}
+
+/* http://bennettfeely.com/clippy/ */
+
+@if $transforms-and-gradients == true {
+
+  html.u-transform-1 .u-image-clip,
+  html.u-transform-2 .u-image-clip {
+    -webkit-clip-path: polygon(0 1%, 100% 2%, 99% 99%, 2% 100%);
+    clip-path: polygon(0 1%, 100% 2%, 99% 99%, 2% 100%);
+  }
+
+  html.u-transform-3 .u-image-clip,
+  html.u-transform-4 .u-image-clip {
+    -webkit-clip-path: polygon(0 1%, 100% 2%, 99% 100%, 2% 99%);
+    clip-path: polygon(0 1%, 100% 2%, 99% 100%, 2% 99%);
+  }
+
+  html.u-transform-5 .u-image-clip,
+  html.u-transform-6 .u-image-clip {
+    -webkit-clip-path: polygon(2% 0, 98% 2%, 100% 99%, 0 100%);
+    clip-path: polygon(2% 0, 98% 2%, 100% 99%, 0 100%);
+  }
+
+}
+
+.u-image-grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

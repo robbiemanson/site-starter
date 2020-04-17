@@ -1,0 +1,136 @@
+/* Cards - not actually used anywhere yet
+   ========================================================================== */
+
+.Card {
+  background-color: #fff;
+  box-shadow:
+    0px 2px 8px rgba(0, 0, 0, 0.05),
+    0px 1px 4px rgba(0, 0, 0, 0.05),
+    0px 2px 40px rgba(0, 0, 0, 0.03);
+  display: block;
+  overflow: hidden;
+  @include clearfix;
+  @include margin-bottom(default);
+  @include padding(default);
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    @include padding(x-large);
+  }
+}
+
+.Card--link {
+  -webkit-box-shadow:
+    0 13px 27px -5px rgba(50,50,93,.25),
+    0 8px 16px -8px rgba(0,0,0,.3),
+    0 -6px 16px -6px rgba(0,0,0,.025);
+  box-shadow:
+    0 13px 27px -5px rgba(50,50,93,.25),
+    0 8px 16px -8px rgba(0,0,0,.3),
+    0 -6px 16px -6px rgba(0,0,0,.025);
+  -webkit-transition: all .1s ease;
+  text-decoration: none;
+  transition: all .1s ease;
+}
+
+.Card--link:hover,
+.Card--link:active {
+  -webkit-box-shadow:
+    0 30px 60px -12px rgba(50,50,93,.25),
+    0 18px 36px -18px rgba(0,0,0,.3),
+    0 -12px 36px -8px rgba(0,0,0,.025);
+  box-shadow:
+    0 30px 60px -12px rgba(50,50,93,.25),
+    0 18px 36px -18px rgba(0,0,0,.3),
+    0 -12px 36px -8px rgba(0,0,0,.025);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.Card--imageFill {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.Card--imageLeft {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100px 100%;
+  color: #fff;
+  object-fit: contain;
+  padding-left: 120px;
+}
+
+.Card--homeHero {
+  @media only screen and (min-width: $breakpoint--md) {
+    margin-top: -9em;
+  }
+}
+
+.Card--collectionsCare {
+  @media only screen and (min-width: $breakpoint--md) {
+    margin-top: -20em;
+  }
+}
+
+.Card--recordsManagement {
+  @media only screen and (min-width: $breakpoint--md) {
+    margin-top: -18em;
+  }
+}
+
+.Card-media {
+  height: 200px;
+  overflow: hidden;
+}
+
+.Card-media--Left {
+  float: left;
+  height: 100%;
+  width: 200px;
+}
+
+.Card-media-image {
+  object-fit: cover;
+}
+
+.Card-heading {
+  color: $text-color--dark;
+  font-weight: normal;
+  margin: 0 0 0.5em 0;
+  padding-bottom: 0.1em;
+  text-decoration: none;
+  @include font-size(7);
+  @include line-height(xx-tight);
+  @include rm-font-family(alt-bold);
+
+  @media only screen and (min-width: $breakpoint--x-sm) {
+    @include font-size(9);
+  }
+  @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+    @include font-size(10);
+  }
+}
+
+.Card-heading--reversed {
+  color: #fff;
+}
+
+.Card-content {
+  @include padding(default);
+}
+
+.Card-content--reversed {
+  color: rgba(255,255,255,0.8);
+}
+
+.Card-heading::after {
+  content: "→";
+  @include rm-font-family(alt);
+}
+
+.Card-footerLink {
+  color: $text-color--dark;
+  font-weight: 600;
+}

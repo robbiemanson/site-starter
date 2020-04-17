@@ -1,0 +1,20 @@
+/* `text-align` utilities
+   ========================================================================== */
+
+@media only screen and (max-width: $breakpoint--small-breakpoint) {
+  .u-sm-text-align--center {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (min-width: $breakpoint--small-breakpoint) {
+  .u-sm-text-align--right {
+    text-align: right !important;
+  }
+}
+
+@media only screen and (min-width: $breakpoint--medium-breakpoint) {
+  .u-md-text-align--right {
+    text-align: right !important;
+  }
+}

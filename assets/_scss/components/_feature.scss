@@ -1,0 +1,16 @@
+/* Feature elements
+   ========================================================================== */
+
+.Feature {
+  margin-bottom: 2em;
+
+  @media only screen and (min-width: $breakpoint--small-breakpoint) {
+    margin-top: 5em;
+  }
+}
+
+.Feature--mobile .Feature-description {
+  @media only screen and (min-width: $breakpoint--small-breakpoint) {
+    margin-top: 4.5em;
+  }
+}

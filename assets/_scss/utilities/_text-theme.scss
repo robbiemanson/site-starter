@@ -1,0 +1,9 @@
+.u-textTheme--reversed,
+.u-textTheme--reversed .Heading,
+.u-textTheme--reversed .NavLink {
+  color: #fff;
+}
+
+.u-textTheme--reversed .NavLink--current {
+  color: rgba(255,255,255,0.5);
+}

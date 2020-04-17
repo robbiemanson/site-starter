@@ -1,0 +1,14 @@
+/* `float` utilities
+   ========================================================================== */
+
+@media only screen and (min-width: $breakpoint--medium-breakpoint) {
+  .u-md-float--left {
+    float: left !important;
+  }
+}
+
+@media only screen and (min-width: $breakpoint--medium-breakpoint) {
+  .u-md-float--right {
+    float: right !important;
+  }
+}

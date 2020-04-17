@@ -1,0 +1,9 @@
+/* Comma separation
+   ========================================================================== */
+
+.separate--comma:after {
+  content:", ";
+}
+.separate--comma:last-child:after {
+  content:"";
+}

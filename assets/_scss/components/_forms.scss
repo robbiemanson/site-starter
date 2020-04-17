@@ -1,0 +1,9 @@
+.inputField {
+  border: 1px solid $color--gray-11;
+  @include border-radius(default);
+  @include font-size(default);
+  @include line-height(xx-tight);
+  @include rm-font-family(alt);
+  @include margin-bottom(default);
+  @include padding(default);
+}

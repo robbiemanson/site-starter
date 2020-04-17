@@ -1,0 +1,20 @@
+/* `display` utilities
+   ========================================================================== */
+
+@media only screen and (min-width: $breakpoint--sm) {
+  .u-sm-display--inline-block {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: $breakpoint--medium-breakpoint) {
+  .u-md-display--inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media only screen and (min-width: $breakpoint--small-breakpoint) {
+  .u-lg-display--block {
+    display: block !important;
+  }
+}

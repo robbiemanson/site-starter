@@ -1,0 +1,39 @@
+/* Editorial content
+   ========================================================================== */
+
+.Editorial {
+  @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+    max-width: 100%;
+    @include font-size(x-large);
+    @include line-height(7);
+  }
+}
+
+// .Editorial ul {
+//   @include padding-left(small);
+// }
+//
+// .Editorial ol,
+// .Editorial ul {
+//   margin-bottom: 1.25em;
+// }
+//
+// .Editorial ol li,
+// .Editorial ul li {
+//   list-style: none;
+//   margin-left: 1.5em;
+//   @include list-item-spacing(xx-loose);
+// }
+
+// .Editorial ol li:before,
+// .Editorial ul li:before {
+//   @include List--dashed;
+// }
+
+.Heading--Editorial {
+  margin-top: 0;
+}
+
+.Heading--Editorial + .Metadata {
+  margin-top: -0.5em;
+}

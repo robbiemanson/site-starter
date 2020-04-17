@@ -1,0 +1,119 @@
+/* Icons
+   ========================================================================== */
+
+.Icon {
+  display: inline-block;
+}
+
+.IconLink {
+  display: inline-block;
+}
+
+.Icon .Icon-svg {
+  fill: $text-color--dark;
+}
+
+.Icon--secondary .Icon-svg {
+  fill: $color--gray-9;
+}
+
+.Icon--button {
+  margin-top: -3px;
+  vertical-align: middle;
+}
+
+.IconButtonString {
+  display: inline-block;
+  vertical-align: middle;
+  @include margin-left(x-small);
+}
+
+.Icon--buttonIcon .Icon-svg {
+  fill: $color--global-background;
+}
+
+.Icon--buttonOutlineIcon .Icon-svg {
+  fill: $color--global-background;
+}
+
+.Icon--x-small,
+.Icon--x-small .Icon-svg,
+.IconLink--x-small {
+  height: 16px;
+  width: 16px;
+}
+
+.Icon--small,
+.Icon--small .Icon-svg,
+.IconLink--small {
+  height: 24px;
+  width: 24px;
+}
+
+.Icon--medium,
+.Icon--medium .Icon-svg,
+.IconLink--medium {
+  height: 36px;
+  width: 36px;
+}
+
+.Icon--logoSmall,
+.Icon--logoSmall .Icon-svg,
+.IconLink--logoSmall {
+  height: 34px;
+  width: 80px;
+}
+
+.Icon--logoBig,
+.Icon--logoBig .Icon-svg,
+.IconLink--logoBig {
+  height: 30px;
+  width: 283px;
+}
+
+/* Icons sourced from https://simpleicons.org */
+
+a:hover .Icon--spotify .Icon-svg,
+.Icon--spotify--coloured .Icon-svg {
+  fill: #1ED760;
+}
+
+a:hover .Icon--applemusic .Icon-svg,
+.Icon--applemusic--coloured .Icon-svg {
+  fill: #B661D1;
+}
+
+a:hover .Icon--itunes .Icon-svg,
+.Icon--itunes--coloured .Icon-svg {
+  fill: #999;
+}
+
+a:hover .Icon--soundcloud .Icon-svg,
+.Icon--soundcloud--coloured .Icon-svg {
+  fill: #ff3300;
+}
+
+a:hover .Icon--youtube .Icon-svg,
+.Icon--youtube--coloured .Icon-svg {
+  fill: #ff0000;
+}
+
+a:hover .Icon--twitter .Icon-svg,
+.Icon--twitter--coloured .Icon-svg {
+  fill: #1DA1F2;
+}
+
+a:hover .Icon--facebook .Icon-svg,
+.Icon--facebook--coloured .Icon-svg {
+  fill: #1778F2;
+}
+
+a:hover .Icon--instagram .Icon-svg,
+.Icon--instagram--coloured .Icon-svg {
+  fill: #E4405F;
+}
+
+a:hover .Icon--bandcamp .Icon-svg,
+.Icon--bandcamp--coloured .Icon-svg {
+  fill: #408294;
+}

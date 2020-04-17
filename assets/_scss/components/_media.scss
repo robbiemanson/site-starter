@@ -1,0 +1,134 @@
+/* Media
+   ========================================================================== */
+
+.MediaCollection {
+  position: relative;
+}
+
+.MediaContainer {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.MediaContainer--absolute {
+  position: absolute;
+}
+
+.MediaContainer-media--absolute {
+  position: absolute;
+}
+
+.MediaContainer--margin--Editorial {
+  @include margin-bottom(default);
+
+  @media only screen and (min-width: $breakpoint--sm) {
+    @include margin-bottom(large);
+  }
+}
+
+.MediaContainer--margin-bottom--0 {
+  margin-bottom: 0;
+}
+
+.MediaContainer--blockGrid {
+  margin-bottom: $block-grid-default-spacing;
+}
+
+.MediaContainer--slide .Media--image {
+  height: auto;
+  width: 100%;
+}
+
+$mobile--height: 639;
+$mobile--width:  360;
+
+$mobile--secondary--height: 586;
+$mobile--secondary--width:  330;
+
+$mobile--secondary--distance-from-top-of-mobile-trio: 26;
+
+$mobile--secondary--height--small: 469;
+$mobile--secondary--width--small:  264;
+
+$mobile--secondary--small--distance-from-top-of-mobile-trio: 84;
+
+$mobile-trio--height: 639;
+$mobile-trio--width:  747;
+
+.MediaContainer--mobile--primary {
+  margin-left: auto;
+  margin-right: auto;
+  width: percentage($mobile--width/$mobile-trio--width);
+  @include z-index--MediaContainer--mobile--primary;
+}
+
+.Media-video {
+  height: auto;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  width: 100%
+}
+
+.Media-video:hover {
+  cursor: pointer;
+}
+
+.Media-video--inline {
+  height: 100% !important;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+  @include z-index--MediaContainer--mobile--primary--video--inline;
+}
+
+.Media--ticket {
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  border-radius: 3px;
+  position: relative;
+}
+
+.MediaContainer--mobile--secondary {
+  position: absolute;
+  top: percentage($mobile--secondary--small--distance-from-top-of-mobile-trio/$mobile-trio--height);
+  width: percentage($mobile--secondary--width--small/$mobile-trio--width);
+}
+
+.MediaContainer--mobile--secondary--left {
+  left: 0;
+}
+
+.MediaContainer--mobile--secondary--right {
+  right: 0;
+}
+
+.Media--image--feature {
+  box-shadow: 0 12px 28px 0 rgba(0,0,0,0.1), 0 2px 6px 0 rgba(0,0,0,0.1);
+}
+
+.Media--feature--prominent {
+  @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.5))
+}
+
+/**
+ * 1. Ensures that the overlay applied by VideoJS covers the entire image
+ */
+
+.Media--image--poster {
+  /* 1 */
+  display: block;
+  width: 100%;
+}
+
+.MediaContainer--mobileSidekick {
+  display: none;
+
+  @media only screen and (min-width: $breakpoint--lg) {
+    bottom: 2em;
+    display: block;
+    right: -2em;
+    position: absolute;
+    width: 12em;
+  }
+}

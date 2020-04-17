@@ -1,0 +1,29 @@
+/* `font-size` utilities
+   ========================================================================== */
+
+@media only screen and (min-width: $breakpoint--sm) {
+  .u-sm-font-size--default {
+    @include font-size(default, !important);
+  }
+}
+
+@media only screen and (min-width: $breakpoint--medium-breakpoint) {
+  .u-md-font-size--default {
+    @include font-size(default, !important);
+  }
+}
+
+.u-md-font-size--small {
+  @media only screen and (min-width: $breakpoint--medium-breakpoint) {
+    @include font-size(default, !important);
+    @include line-height(7, !important);
+  }
+  @media only screen and (min-width: $breakpoint--Editorial-large-text) {
+    @include font-size(large, !important);
+    @include line-height(7, !important);
+  }
+}
+
+.u-md-font-size--small + .u-md-font-size--small {
+  margin-top: -0.6em;
+}

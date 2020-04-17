@@ -1,0 +1,86 @@
+/* Video.js overrides
+   ========================================================================== */
+
+.video-js.vjs-default-skin,
+.video-js .vjs-poster {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.video-js.vjs-default-skin:hover,
+.video-js .vjs-poster:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  background-color: rgba(51, 51, 51, 1);
+  border: 0;
+  border-radius: 100%;
+  box-shadow: none;
+  height: auto;
+  height: 60px;
+  width: 60px;
+}
+
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus {
+  background-color: rgba(51, 51, 51, 0.75);
+  box-shadow: none;
+}
+
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+  font-size: 250%;
+  margin-left: -30px;
+}
+
+.vjs-default-skin .vjs-big-play-button:before {
+  color: #fff;
+  height: auto;
+  left: 0.07em;
+  line-height: 100%;
+  text-shadow: none;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+.vjs-default-skin .vjs-control:before,
+.vjs-default-skin .vjs-control:focus:before,
+.vjs-default-skin .vjs-control:hover:before {
+  color: #fff;
+  text-shadow: none;
+}
+
+.vjs-default-skin .vjs-control-bar {
+  background-color: rgba(51, 51, 51, 0.95);
+}
+
+.vjs-default-skin .vjs-load-progress {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.vjs-default-skin .vjs-seek-handle {
+  background-color: #fff;
+  border-radius: 100px;
+  width: 1em;
+}
+
+.vjs-default-skin .vjs-slider {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.vjs-default-skin .vjs-slider-handle:before {
+  display: none;
+}
+
+.vjs-default-skin .vjs-play-progress,
+.vjs-default-skin .vjs-volume-level {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.vjs-default-skin .vjs-time-controls {
+  @include rm-font-family(alt);
+}
+
+.vjs-default-skin .vjs-volume-handle:before {
+  text-shadow: none;
+  transform: none;
+}

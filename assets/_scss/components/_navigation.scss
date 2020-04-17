@@ -1,0 +1,19 @@
+/* Navigation
+   ========================================================================== */
+
+.Navigation {
+  @include margin-bottom(large);
+  @include padding-top(x-large);
+
+  @media only screen and (min-width: $breakpoint--small-breakpoint) {
+    @include margin-bottom(xx-large);
+    @include padding-top(x-large);
+  }
+}
+
+.Navigation--bottom {
+  @media only screen and (min-width: $breakpoint--small-breakpoint) {
+    @include margin-bottom(xx-large);
+    @include padding-top(16);
+  }
+}

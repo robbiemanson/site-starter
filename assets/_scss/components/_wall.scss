@@ -1,0 +1,27 @@
+/* Wall
+   ========================================================================== */
+
+.brick {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: $breakpoint--medium-breakpoint) {
+  .brick {
+    float: left;
+    // margin-right: 5%;
+    // width: 47.5%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.brick img {
+  display: block;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.18))
+}
