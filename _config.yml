@@ -89,9 +89,6 @@ sass:
 
 # Collections
 collections:
-  photos:
-    output: true
-    permalink: /photos/:path/
-  minute-movies:
-    output: true
-    permalink: /minute-movies/:path/
+  patterns:
+    output: false
+    permalink: /pattern-library/:path/

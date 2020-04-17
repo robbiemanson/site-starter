@@ -1,0 +1,57 @@
+---
+title: Pull quote
+permalink: /pattern-library/#section--pullquote
+pattern_id: pullquote
+---
+
+<div class="l-Wrapper l-Wrapper--row u-margin-top--xx-large" id="section--{{ page.pattern_id }}">
+  <section class="row row--Editorial u-padding-top--0">
+    <div class="column medium-4">
+      <div class="column-content column-content--medium">
+        <h2 class="Heading Heading--minor u-margin-top--0">
+          {{ page.title }}
+        </h2>
+      </div>
+    </div>
+    <div class="column medium-8">
+      <div class="Editorial">
+
+        <div class="DocsExample">
+{% example html %}
+<blockquote class="Pullquote">
+  <span class="Pullquote-quote u-text-gradient">Pull quotes stick out of the right and left-hand sides of the main content column by default. It’s a useful feature when they’re quite long, but they can be contained easily.</span>
+</blockquote>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<blockquote cite="http://robbiemanson.com/styleguide/" class="Pullquote Pullquote--contained">
+  <span class="Pullquote-quote u-text-gradient">Contained pull quotes always stay inside their parent column. This helps to keep things feeling tidy. Ideally they’re a little shorter in length.</span>
+  <footer>
+    <cite class="Pullquote-cite">Cited Author, <a class="Link" href="http://robbiemanson.com/styleguide/">Cited Publication</a></cite>
+  </footer>
+</blockquote>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<blockquote class="Pullquote">
+  <span class="Pullquote-quote">Pull quotes don’t need to be colourful. They can be the standard old text colour, a bit like this.</span>
+</blockquote>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<blockquote class="Pullquote Pullquote--lite">
+  <span class="Pullquote-quote">Pull quotes come in a ‘lite’ variant, useful for knocked back leaders and whatnot. The reduced contrast means you can get away with a bit more content.</span>
+</blockquote>
+{% endexample %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

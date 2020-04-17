@@ -1,0 +1,60 @@
+---
+title: Links
+permalink: /pattern-library/#section--links
+pattern_id: links
+---
+
+<div class="l-Wrapper l-Wrapper--row u-margin-top--xx-large" id="section--{{ page.pattern_id }}">
+  <section class="row row--Editorial u-padding-top--0">
+    <div class="column medium-4">
+      <div class="column-content column-content--medium">
+        <h2 class="Heading Heading--minor u-margin-top--0">
+          {{ page.title }}
+        </h2>
+      </div>
+    </div>
+    <div class="column medium-8">
+      <div class="Editorial">
+        <div class="DocsExample">
+{% example html %}
+<p>
+  Just add a class of <a class="Link" href="#">Link</a>
+</p>
+
+<p>
+  Else they'll go <a href="#">unstyled</a>.
+</p>
+
+<p>
+  <a class="Link has-rightArrow" href="#">Links can have arrows</a>
+</p>
+
+<p>
+  <a class="LinkEmph" href="#">I'm an emphasised link</a>
+</p>
+
+<p>
+  <a class="LinkEmph has-rightArrow" href="#">With an arrow</a>
+</p>
+
+<h3 class="Heading Heading--large">
+  Links can also be placed <a class="Heading-link" href="#">inside headings</a>.
+</h3>
+
+
+<h3 class="Heading Heading--large">
+  <a class="Heading-link has-rightArrow" href="#">Heading links can also have arrows</a>
+</h3>
+
+<p class="Metadata Metadata--large">
+  <a class="Link Link--Metadata" href="#">
+    Links can appear in a metadata style
+  </a>
+</p>
+{% endexample %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

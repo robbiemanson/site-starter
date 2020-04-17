@@ -1,0 +1,81 @@
+---
+title: Metadata
+permalink: /pattern-library/#section--metadata
+pattern_id: metadata
+---
+
+<div class="l-Wrapper l-Wrapper--row u-margin-top--xx-large" id="section--{{ page.pattern_id }}">
+  <section class="row row--Editorial u-padding-top--0">
+    <div class="column medium-4">
+      <div class="column-content column-content--medium">
+        <h2 class="Heading Heading--minor u-margin-top--0">
+          {{ page.title }}
+        </h2>
+      </div>
+    </div>
+    <div class="column medium-8">
+      <div class="Editorial">
+
+        <div class="DocsExample">
+{% example html %}
+<p class="Metadata">
+  Metadata is supplementary; extra information to clarify another element.
+</p>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<p class="Metadata Metadata--large">
+  Metadata is smaller than regular body text by default, but can be increased in size. Note the size increase only kicks in at larger breakpoints.
+</p>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<p class="Metadata Metadata--small">
+  Metadata can be made even smaller than its default size if required.
+</p>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<h1 class="Heading Heading--xx-large">
+  Page/post title
+</h1>
+<span class="Metadata Metadata--editorialSubhead">
+  Metadata as an editorial subheading
+</span>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<p class="Metadata Metadata--limitWidth">
+  Metadata can have its measure limited, independently of any container, to prevent pesky long lines from disrupting thr reading experience. This is particularly useful when metadata takes the form of a paragraph.
+</p>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<p class="Metadata Metadata--figcaption">
+  The `figcaption` element is treated as metadata.
+</p>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<p class="Metadata Metadata--figcaption--text-align--left">
+  Metadata `figcaption` elements are right-aligned by default, but but can left-aligned if desired.
+</p>
+{% endexample %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

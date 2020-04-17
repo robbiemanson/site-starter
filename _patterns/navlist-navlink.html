@@ -1,0 +1,89 @@
+---
+title: NavList + NavLink
+permalink: /pattern-library/#section--navlist-navlink
+pattern_id: navlist-navlink
+---
+
+<div class="l-Wrapper l-Wrapper--row u-margin-top--xx-large" id="section--{{ page.pattern_id }}">
+  <section class="row row--Editorial u-padding-top--0">
+    <div class="column medium-4">
+      <div class="column-content column-content--medium">
+        <h2 class="Heading Heading--minor u-margin-top--0">
+          {{ page.title }}
+        </h2>
+      </div>
+    </div>
+    <div class="column medium-8">
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="NavList" role="navigation">
+  <li>
+  	<a class="NavLink NavLink--current" href="">
+      Current NavLink item
+    </a>
+  </li>
+  <li>
+  	<a class="NavLink" href="">
+      Regular weight
+    </a>
+  </li>
+  <li>
+  	<a class="NavLink NavLink--bold" href="">
+      Bold weight
+    </a>
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ol class="NavList NavList--inline" role="navigation">
+  <li>
+    <a class="NavLink" href="">
+      Inline NavList
+    </a>
+  </li>
+  <li>
+    <a class="NavLink NavLink--current" href="">
+      Current NavLink
+    </a>
+  </li>
+  <li>
+    <a class="NavLink NavLink--small" href="">
+      Small NavLink
+    </a>
+  </li>
+  <li class="Metadata Metadata--small">
+    Metadata in inline NavList
+  </li>
+</ol>
+{% endexample %}
+      </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ol class="NavList NavList--inline NavList--inline--spaced" role="navigation">
+  <li>
+    <a class="NavLink" href="">
+      Inline NavList Spaced
+    </a>
+  </li>
+  <li>
+    <a class="NavLink NavLink--current" href="">
+      NavLink
+    </a>
+  </li>
+  <li>
+    <a class="NavLink NavLink--current" href="">
+      NavLink
+    </a>
+  </li>
+</ol>
+{% endexample %}
+      </div>
+
+    </div>
+  </section>
+</div>

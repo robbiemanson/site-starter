@@ -1,0 +1,112 @@
+---
+title: Dev Resources
+layout: default
+permalink: /dev-resources/
+hide_from_search_engines: true
+---
+
+<div class="l-Wrapper l-Wrapper--row">
+  <div class="row">
+
+    <div class="column medium-4">
+      <h2 class="Heading Heading--x-large u-margin-bottom--large">
+        <a class="Link" href="/pattern-library/">Pattern Library</a>
+      </h2>
+      <ul class="List List--dashed">
+        {% for item in site.patterns %}
+        <li>
+          <a class="Link" href="{{ item.permalink }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="column medium-8">
+      <h2 class="Heading Heading--x-large u-margin-bottom--large">
+        Layouts
+      </h2>
+      <ul class="List List--headingBodyPair">
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            Default
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/default.html">Source</a> &middot; Default unopinionated w/ header and footer
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/minute-movies/2017-11-india-pt-ii/">Heading + Leader + Full-Width Content</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/heading_leader_full_width_content.html">Source</a> &middot; Heading/leader on single row with full-width content row stacked underneath
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/work/freeagent-mobile/">Case Study</a>
+          </h3>
+          <span class="Metadata">
+            Not a layout per say, but shows what's possible
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/photos/north-west-scotland-may-2015/">Photo Collection</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/photo_collection.html">Source</a> &middot; Simple photo collection with captions and lazyloading
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://mademountain.com/releases/here-hello/">Single Col Centered Content</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/single_col_centered_content.html">Source</a> &middot; With centre aligned text
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            Single Col Editorial
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/single_col_editorial.html">Source</a>
+          </span>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/journal/">Two Col Classic List</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/two_col_classic_list.html">Source</a> &middot; Good for directory listings
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/mantras/">Two Col Classic Page</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/two_col_classic_page.html">Source</a> &middot; Typical robbiemanson.com layout, Page syntax
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/journal/aligned-values/">Two Col Classic Post</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/two_col_classic_post.html">Source</a> &middot; Typical robbiemanson.com layout, Post syntax
+          </span>
+        </li>
+        <li class="List-item">
+          <h3 class="Heading Heading--large">
+            <a class="Link" href="http://robbiemanson.com/minute-movies/2017-11-india-pt-ii/">Single Video</a>
+          </h3>
+          <span class="Metadata">
+            <a class="Link" href="https://github.com/robbiemanson/site-starter/blob/master/_layouts/heading_leader_full_width_content.html">Source</a> &middot; Smaller layout snippet just for single videos
+          </span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

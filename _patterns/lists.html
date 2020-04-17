@@ -1,0 +1,173 @@
+---
+title: Lists
+permalink: /pattern-library/#section--lists
+pattern_id: lists
+---
+
+<div class="l-Wrapper l-Wrapper--row u-margin-top--xx-large" id="section--{{ page.pattern_id }}">
+  <section class="row row--Editorial u-padding-top--0">
+    <div class="column medium-4">
+      <div class="column-content column-content--medium">
+        <h2 class="Heading Heading--minor u-margin-top--0">
+          {{ page.title }}
+        </h2>
+      </div>
+    </div>
+    <div class="column medium-8">
+      <div class="Editorial">
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--bare">
+  <li>
+     A bare list, without any markers
+  </li>
+  <li>
+    Useful when the list structure shouldn’t be pronounced
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--dashed">
+  <li>
+    Important: ensure content inside the list items is typed on a new line, else horizontal alignment of the dash + content will be off. The dashed list is used frequently.
+  </li>
+  <li>
+    Replacing bullets with dashes feels more elegant
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--dashed List--dashed--indented">
+  <li>
+    A dashed list that’s also indented
+  </li>
+  <li>
+    When a more pronounced break from other content is required
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--dashed List--dashed--negativeIndent">
+  <li>
+    A negatively indented dashed list
+  </li>
+  <li>
+    Useful when the left edge of the text column should remain flush
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--dashed List--dashed--loose">
+  <li>
+    The loosely dashed list
+  </li>
+  <li>
+    Useful when items contain a lot of content
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--dashed List--dashed--x-loose">
+  <li>
+    A list with extra-loosely spaced items. This is a good solution when the items contain a lot of written content, as the extra space helps to aid readability.
+  </li>
+  <li>
+    A list with extra-loosely spaced items. This is a good solution when the items contain a lot of written content, as the extra space helps to aid readability.
+  </li>
+  <li>
+    A list with extra-loosely spaced items. This is a good solution when the items contain a lot of written content, as the extra space helps to aid readability.
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+        <div class="DocsExample">
+{% example html %}
+<ul class="List List--headingBodyPair">
+  <li class="List-item">
+    <h3 class="Heading Heading--large">
+      Paired heading and body content list
+    </h3>
+    <p>
+      Pairs a heading with e.g. a paragraph
+    </p>
+  </li>
+  <li class="List-item">
+    <h3 class="Heading Heading--large">
+      Any heading can be used
+    </h3>
+    <p>
+      The list doesn't care
+    </p>
+  </li>
+  <li class="List-item">
+    <h3 class="Heading Heading--large">
+      Body content can be styled any way
+    </h3>
+    <span class="Metadata">
+      The list doesn't care about that either
+    </span>
+  </li>
+</ul>
+{% endexample %}
+        </div>
+
+
+        <div class="DocsExample">
+{% example html %}
+<ol class="List List--orderedCounter">
+  <li>
+    <h3 class="Heading Heading--large">
+      <span class="List--orderedCounter-count">
+        An ordered counter list
+      </span>
+    </h3>
+    <p>
+      There’s typically a paragraph following each ordered counter item, further expanding upon the heading.
+    </p>
+  </li>
+  <li>
+    <h3 class="Heading Heading--large">
+      <span class="List--orderedCounter-count">
+        Where each item has a count
+      </span>
+    </h3>
+    <p>
+      There’s typically a paragraph following each ordered counter item, further expanding upon the heading.
+    </p>
+  </li>
+  <li>
+    <h3 class="Heading Heading--large">
+      <span class="List--orderedCounter-count">
+        Which continue in sequence
+      </span>
+    </h3>
+    <p>
+      There’s typically a paragraph following each ordered counter item, further expanding upon the heading.
+    </p>
+  </li>
+</ol>
+{% endexample %}
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+</div>
