@@ -19,7 +19,7 @@ If you don't have Homebrew, Ruby, Bundler, Node.js or Gulp already – follow th
 2. `bundle install` to install Gems
 3. `brew install imagemagick && brew install graphicsmagick` for Gulp-powered image resizing
 4. `npm install` to install NPM packages
-5. Restart shell
+5. Restart terminal
 
 You can now start [local development](#local-development)
 
@@ -38,25 +38,18 @@ You can now start [local development](#local-development)
 * Create new [CloudFront distributions](https://console.aws.amazon.com/cloudfront/) (see existing examples) for both production and staging URLs, add IDs to each of the relevant `s3_website.yml` files, then replace the Cloudfront URL in [head.html](https://github.com/robbiemanson/site-starter/blob/master/_includes/head.html)
 * Depending on index/homepage name of the site, may need to update 'Home' title in [head.html](https://github.com/robbiemanson/site-starter/blob/master/_includes/head.html)
 
-### Local development
-Open terminal window and run:
+## Local development
+Open terminal and run:
 ```bash
 $ bundle exec jekyll serve
 ```
-
-This will compile the site and watch for HTML/file structure changes.
+This will compile the site and recompile as new HTML/file structure changes are made.
 
 Open another terminal window and run:
 ```bash
 $ gulp
 ```
-
-This will open a new browser tab running Browsersync and auto-reload all other changes.  
-
-Optional: resize and minify photos (will take at least a few mins to run):
-```bash
-$ gulp photos
-```
+This will open a new browser tab running Browsersync and auto-reload when any HTML, SCSS, JS or media changes.  
 
 ## Hosting and deployment
 * Hosted on S3, with CloudFront distribution. Deployed using [s3_website](https://github.com/laurilehmijoki/s3_website).
@@ -89,6 +82,12 @@ npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
 ## Writing blog posts
 Follow instructions at: http://jekyllrb.com/docs/drafts/
 
+## Image processing
+To resize and minify full sized photos (will take at least a few mins to run):
+```bash
+$ gulp photos
+```
+
 ## Starting from scratch
 
 If haven't used Site Starter on your machine before
@@ -101,11 +100,11 @@ If haven't used Site Starter on your machine before
 ```bash
 brew install ruby-install
 ```
-3. Install Ruby 2.3.3 (confirm: check `~/.rubies`, then restart shell)
+3. Install Ruby 2.3.3 (confirm: check `~/.rubies`, then restart terminal)
 ```bash
 ruby-install ruby 2.3.3
 ```
-4. Install [chruby](https://github.com/postmodern/chruby) (confirm: restart shell, then `chruby`)
+4. Install [chruby](https://github.com/postmodern/chruby) (confirm: restart terminal, then `chruby`)
 ```bash
 brew install chruby
 ```
