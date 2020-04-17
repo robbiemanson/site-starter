@@ -16,17 +16,19 @@ If you don't have Homebrew, Ruby, Bundler, Node.js or Gulp already – follow th
 
 ### Configure new site locally
 1. `git clone git@github.com:robbiemanson/site-starter.git` into a new directory, or download zip
-2. `bundle install` (to install Gems)
-3. `brew install imagemagick` (for Gulp-powered image resizing)
-4. `brew install graphicsmagick` (ditto)
-5. `npm install` (install NPM packages; restart shell)
+2. `bundle install` to install Gems
+3. `brew install imagemagick && brew install graphicsmagick` for Gulp-powered image resizing
+4. `npm install` to install NPM packages
+5. Restart shell
 
-Now just open the site in your text editor and away you go. Some important changes you'll want to make:
+You can now start [local development](#local-development)
 
-1. Find and replace all instances of `examplesite.com` with URL of new site
-2. Find and replace instances of `Site Owner`
+### Find + replace important elements
+
+1. Replace all instances of `examplesite.com` with URL of new site
+2. Replace instances of `Site Owner`
 3. Replace instances of `http://stagingAssetURL.com` with staging asset URL (e.g. Cloudfront distribution URL)
-3. Replace `favicon.png`
+4. Replace `favicon.png`
 
 ### Configure hosting
 * Configure domain on [Route 53](https://console.aws.amazon.com/route53) including `assets.` and `staging.` subdomains (see one of the other examples e.g. mademountain.com)
