@@ -12,17 +12,13 @@
         {% endif %}
         </li>
         {% endfor %}
+        {% if site.asset_url != 'http://assets.examplesite.com' or site.asset_url != 'http://stagingAssetURL.com' %}
         <li>
-          {% if page.nav_category == link.nav_category %}
-          <a class="NavLink NavLink--current NavLink--small" href="/pattern-library/">
-            Pattern Library
-          </a>
-          {% else %}
           <a class="NavLink NavLink--small" href="/pattern-library/">
             Pattern Library
           </a>
-          {% endif %}
         </li>
+        {% endif %}
         <li class="Metadata Metadata--small">
           &copy; {{ site.time | date: '%Y' }} Site Owner
         </li>
