@@ -44,12 +44,14 @@ Open terminal window and run:
 $ bundle exec jekyll serve
 ```
 
-This will serve the site contents and watch for changes.
+This will compile the site and watch for HTML/file structure changes.
 
-Open another terminal window. Unless site is being setup/installed from scratch, run:
+Open another terminal window and run:
 ```bash
 $ gulp
 ```
+
+This will open a new browser tab running Browsersync and auto-reload all other changes.  
 
 Optional: resize and minify photos (will take at least a few mins to run):
 ```bash
